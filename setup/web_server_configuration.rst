@@ -305,7 +305,7 @@ The **minimum configuration** to get your application running under Nginx is:
             # Remove the internal directive to allow URIs like this
             internal;
         }
-        
+
         # return 404 for all other php files not matching the front controller
         # this prevents access to other php files you don't want to be accessible.
         location ~ \.php$ {
@@ -339,5 +339,5 @@ For advanced Nginx configuration options, read the official `Nginx documentation
 
 .. _`Apache documentation`: http://httpd.apache.org/docs/
 .. _`does not support Unix sockets`: https://bz.apache.org/bugzilla/show_bug.cgi?id=54101
-.. _`FastCgiExternalServer`: http://www.fastcgi.com/mod_fastcgi/docs/mod_fastcgi.html#FastCgiExternalServer
+.. _`FastCgiExternalServer`: http://docs.oracle.com/cd/B31017_01/web.1013/q20204/mod_fastcgi.html#FastCgiExternalServer
 .. _`Nginx documentation`: http://wiki.nginx.org/Symfony
